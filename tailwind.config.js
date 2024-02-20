@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         'sat': ['Satisfy'],
         'roboto': ['Roboto Condensed'],
+        'sign': ['Dancing Script'],
       }
     },
   },

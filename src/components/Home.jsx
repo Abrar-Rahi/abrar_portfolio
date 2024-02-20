@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import heroimg from '../assets/abrar.png'
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -10,10 +11,10 @@ const Home = () => {
                 <h2 className='text-white font-semibold  max-w-xl text-2xl md:text-5xl md:leading-tight'>HI I'M ABRAR. I AM A FULL-STACK DEVELOPER</h2>
                 <p className=' max-w-md text-gray-500 py-4'>As a full-stack developer, I bring a strong foundation in HTML, CSS, and JavaScript, coupled with deep expertise in React.js, Node.js, Express.js and MongoDB</p>
                 <div>
-                    <button className='group text-white py-3 px-6 w-fit flex items-center gap-x-2 my-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:bg-gradient-to-r hover:from-blue-400 hover:to-cyan-500 duration-300'>
+                    <Link to='portfolio' smooth duration={500} className='group text-white py-3 px-6 w-fit flex items-center gap-x-2 my-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:bg-gradient-to-r hover:from-blue-400 hover:to-cyan-500 duration-300'>
                         Portfolio
                         <span className='group-hover:rotate-90 duration-300'><FaLongArrowAltRight size={20} /></span> 
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div>
