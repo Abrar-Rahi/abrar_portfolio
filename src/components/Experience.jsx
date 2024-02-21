@@ -10,8 +10,8 @@ import node from '../assets/logo/node.png'
 import reactImage from '../assets/logo/react.png'
 const Experience = () => {
   return (
-    <div name="experience" className='w-full bg-gradient-to-b from-gray-800 to-black  py-40 md:py-48 '>
-        <div className='max-w-screen-lg px-4 mx-auto flex flex-col justify-center  h-full text-white'>
+    <div name="experience" className='w-full   py-40 md:py-48 '>
+        <div className='max-w-screen-lg px-4 mx-auto flex flex-col justify-center  h-full text-gray-500'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Experience</p>
                 <p className='py-6'>these are the technologies I've worked with</p>

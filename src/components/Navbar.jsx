@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FiMenu } from "react-icons/fi";
 import { FaTimes } from "react-icons/fa";
 import { Link } from 'react-scroll';
+import DarkMood from './DarkMood';
 
 const Navbar = () => {
+  
   let [nav, setNav] = useState(false)
   let link = [
     { links: "home" },
@@ -13,11 +15,21 @@ const Navbar = () => {
     { links: "contact" },
 
   ]
+
+  
+  
+
+  
+
+  
   return (
-    <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-b to-black from-gray-800 fixed font-bold'>
+    <div className='flex text-gray-500 bg-gray-300 justify-between items-center w-full h-20 px-4  fixed font-bold'>
       <Link to="home" smooth duration={500}>
          <h1 className='md:text-5xl text-3xl ml-2 font-sign font-bold cursor-pointer'>ABRAR</h1>
       </Link>
+       
+      <div className='flex items-center gap-2'>
+        <DarkMood/>
 
       <div>
         <ul className='hidden md:flex'>
@@ -28,7 +40,7 @@ const Navbar = () => {
 
           ))}
         </ul>
-
+        
         <div className='md:hidden pr-4  text-gray-500 z-10'>
 
           <div onClick={() => setNav(!nav)} className='cursor-pointer'>
@@ -45,8 +57,11 @@ const Navbar = () => {
           </ul>
         }
         </div>
+        
 
       </div>
+        </div> 
+
     </div>
 
 
