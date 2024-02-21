@@ -14,7 +14,7 @@ const Navbar = () => {
 
   ]
   return (
-    <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-b to-black from-gray-800 fixed font-bold '>
+    <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-b to-black from-gray-800 fixed font-bold'>
       <Link to="home" smooth duration={500}>
          <h1 className='md:text-5xl text-3xl ml-2 font-sign font-bold cursor-pointer'>ABRAR</h1>
       </Link>
